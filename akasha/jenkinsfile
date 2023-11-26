@@ -1,0 +1,32 @@
+pipeline{
+    agent any
+    stages{
+        stage("start")
+                {
+                    steps{
+                        sh "echo project begins"
+                    }
+                }
+        stage("cleaning process"){
+            steps{
+                deleteDir()
+            }
+        }
+        stage("clone closebase"){
+            steps{
+                sh "git clone https://github.com/sushelex/aws_learing_1.git"
+            }
+        }
+        stage("navigate to aws_learning_1/akasha"){
+            steps{
+                dir("aws_learing_1/akasha"){
+                    sh "pwd"
+                    sh "ls -la"
+                    sh "mvn test"
+                }
+            }
+        }
+
+    }
+
+}
