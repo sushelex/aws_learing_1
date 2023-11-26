@@ -30,4 +30,9 @@ public class AwsOperation {
     public void operation5(){
         System.out.println("this is operation 5");
     }
+
+    @Test
+    public void operation6(){
+        System.out.println("this is operation 6");
+    }
 }
