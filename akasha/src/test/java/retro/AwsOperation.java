@@ -15,4 +15,9 @@ public class AwsOperation {
     {
         System.out.println("this is operation 2");
     }
+
+    @Test
+    public void operation3(){
+        System.out.print("this is operation 3");
+    }
 }
