@@ -20,4 +20,9 @@ public class AwsOperation {
     public void operation3(){
         System.out.print("this is operation 3");
     }
+
+    @Test
+    public void operation4(){
+        System.out.print("this is operation 4");
+    }
 }
